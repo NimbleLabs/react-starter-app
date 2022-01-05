@@ -4,8 +4,18 @@ import Settings from './views/Settings';
 import Sidebar from "./layout/Sidebar";
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Login from "./views/Login";
 
 function App() {
+
+  const isLoginEnabled = false // use authentication hook here
+
+  if(isLoginEnabled) {
+    return (
+      <Login />
+    )
+  }
+
   return (
     <Router>
       <div className="vh-100">

@@ -1,0 +1,57 @@
+@use 'sass:math';
+
+@for $i from 4 through 100 {
+
+  @if $i < 13 or ($i > 13 and $i < 24 and $i % 2 == 0) or $i % 4 == 0 {
+    .w-#{$i} {
+      width: #{math.div($i, 4)}rem !important;
+    }
+
+    .h-#{$i} {
+      height: #{math.div($i, 4)}rem !important;
+    }
+  }
+}
+
+.w-25-pct, .w-quarter {
+  width: 25%;
+}
+
+.h-25-pct, .h-quarter {
+  height: 25%;
+}
+
+.w-50-pct, .w-half {
+  width: 50%;
+}
+
+.h-50-pct, .h-half {
+  height: 50%;
+}
+
+.w-75-pct {
+  width: 75%;
+}
+
+.h-75-pct {
+  height: 75%;
+}
+
+.w-100-pct, .w-full {
+  width: 100%;
+}
+
+.h-100-pct, .h-full {
+  height: 100%;
+}
+
+// TODO: refactor to match percent semantics above
+@media (min-width: 768px) {
+  .w-md-25 {
+    width: 25% !important;
+  }
+
+  .w-md-50 {
+    width: 50% !important;
+  }
+}

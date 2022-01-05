@@ -1,0 +1,41 @@
+$primary: #0d6efd !default;
+$secondary: #e0cffc !default;
+$theme-color: $primary !default;
+$enable-cssgrid: true !default;
+$gray-150: #E9ECEF !default;
+$pink: #ED2190 !default;
+
+@import 'beautiful-bootstrap/beautiful-bootstrap';
+
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  body { font-family: 'Inter var', sans-serif; }
+}
+
+.theme-color {
+  color: $theme-color;
+}
+
+.bg-theme-color {
+  color: $gray-100;
+  background-color: $indigo-500;
+}
+
+.bg-content-theme-color {
+  color: $gray-800;
+  background-color: $gray-200;
+}
+
+.bg-theme-active {
+  color: $gray-100;
+  background-color: $indigo-600 !important;
+}
+
+.text-theme-light {
+  color: $indigo-300;
+}

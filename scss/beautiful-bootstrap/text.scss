@@ -1,0 +1,62 @@
+h1, h2, h3, h4 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.font-sm {
+  font-size: .85rem;
+}
+
+.font-xsm {
+  font-size: .75rem;
+}
+
+.font-md {
+  font-size: 1.25rem;
+}
+
+.font-2 {
+  font-size: 2rem;
+}
+
+.font-lg {
+  font-size: 3rem;
+}
+
+.font-xl {
+  font-size: 4rem;
+}
+
+.font-2xl {
+  font-size: 5rem;
+}
+
+.font-xbold {
+  font-weight: 800;
+}
+
+.spacing-close {
+  letter-spacing: -.025em;
+}
+
+.primary-cutout-accent {
+  padding: 10px;
+  font-weight: 800;
+  display: inline-block;
+  -webkit-clip-path: polygon(4% 10%,98% 10%,100% 95%,0 100%);
+  clip-path: polygon(4% 10%,98% 10%,100% 95%,0 100%);
+  background-color: $pink;
+  color: #fff;
+}
+
+.header-gradient {
+  background: linear-gradient(80deg,#FD7F63,#E85CBA,#A546E9,#923EF2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tilt-red-background {
+  display: inline-block;
+  text-shadow: 1px 1px 3px rgb(36 37 47 / 25%);
+  transform: rotate(-1.5deg);
+}

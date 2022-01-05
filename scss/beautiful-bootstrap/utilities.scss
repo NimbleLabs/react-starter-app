@@ -1,0 +1,46 @@
+.pop-link {
+
+  &:hover {
+    transform: translate(1px, -1px);
+    transition: transform .25s;
+  }
+
+  &:active {
+    transform: translate(2px, 2px);
+    transition: transform .25s;
+    //box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  }
+}
+
+.shadow-hover {
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    transition: transform .25s;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-dark  {
+  .nav-link.active {
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+  }
+}
+
+.centered-circle {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 50% !important;
+}
+
+.gray-150 {
+  color: $gray-150;
+}

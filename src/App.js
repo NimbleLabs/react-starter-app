@@ -5,6 +5,9 @@ import Sidebar from "./layout/Sidebar";
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Login from "./views/Login";
+import Checklists from "./views/lists/Checklists";
+import ChecklistForm from "./views/lists/ChecklistForm";
+import ChecklistDetails from "./views/lists/ChecklistDetails";
 
 function App() {
 
@@ -25,6 +28,10 @@ function App() {
           <div className="w-100-pct">
             <Routes>
               <Route path="/" element={<Dashboard/>}/>
+              <Route path="/todo" element={<Checklists/>}/>
+              <Route path="/new-checklist" element={<ChecklistForm />}/>
+              <Route path="/edit-checklist/:id" element={<ChecklistForm />}/>
+              <Route path="/checklist/:id" element={<ChecklistDetails />}/>
               <Route path="/settings" element={<Settings/>}/>
             </Routes>
           </div>

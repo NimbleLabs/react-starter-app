@@ -10,9 +10,9 @@ function App() {
     <Router>
       <div className="vh-100">
         <TopNav/>
-        <div className="d-flex vh-100">
+        <div className="d-flex main-container">
           <Sidebar />
-          <div>
+          <div className="w-100-pct">
             <Routes>
               <Route path="/" element={<Dashboard/>}/>
               <Route path="/settings" element={<Settings/>}/>

@@ -1,5 +1,5 @@
 function Sidebar() {
-  return <div className="h-100-pct w-32 bg-blue-100">
+  return <div className="h-100-pct w-48 bg-gray-100 px-4 pt-5">
     <a href="/">Dashboard</a>
     <br />
     <a href="/settings">Settings</a>

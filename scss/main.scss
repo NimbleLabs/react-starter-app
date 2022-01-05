@@ -39,3 +39,7 @@ body {
 .text-theme-light {
   color: $indigo-300;
 }
+
+.main-container {
+  height: calc(100% - 56px);
+}

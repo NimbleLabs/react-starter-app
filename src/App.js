@@ -29,8 +29,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard/>}/>
               <Route path="/todo" element={<Checklists/>}/>
-              <Route path="/new-checklist" element={<ChecklistForm />}/>
-              <Route path="/edit-checklist/:id" element={<ChecklistForm />}/>
+              <Route path="/new-checklist" element={<ChecklistForm title="New" />}/>
+              <Route path="/edit-checklist/:id" element={<ChecklistForm title="Edit" />}/>
               <Route path="/checklist/:id" element={<ChecklistDetails />}/>
               <Route path="/settings" element={<Settings/>}/>
             </Routes>

@@ -14,6 +14,17 @@ export default class LocalData {
     return checklists
   }
 
+  getChecklist(checklistId) {
+    let checklists = this.getChecklists()
+
+    for( let i = 0; i < checklists.length; i++ ) {
+
+      if(checklistId === checklists[i].id) {
+        return checklists[i]
+      }
+    }
+  }
+
   addChecklist(checklist) {
     checklist.id = uuidv4()
     let checklists = this.getChecklists()
